@@ -1,0 +1,292 @@
+{% extends "base.html" %}
+
+{% block title %}
+Special Attar
+{% endblock title %}
+
+{% block body %}
+<body style="background-color: #cfe8fc;">
+    <div class="product-list">
+        <!-- Repeat this product card section for each product -->
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Armani Aqua D Gio inspired</h2>
+            <p>Marine, Citrus, Calm</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <!-- Repeat the above product card section for all 50 products -->
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Invictus Onyx inspired</h2>
+            <p>Refreshing, Citrusy, Modern</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Wow Musk inspired</h2>
+            <p>Musky, Charming, Oriental</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Oud Arbiyat inspired</h2>
+            <p>Warm, Spicy, Fruity</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Burberry Her inspired</h2>
+            <p>Fruity, Floral, Gourmand</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Sliver Shade Ajmal inspired</h2>
+            <p>Energetic, Floral, Fruity</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Spicy Bomb inspired</h2>
+            <p>Warm, Spicy, Intense</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Wisal Ajmal inspired</h2>
+            <p>Opulent, Fruity, Luxurious</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        <div class="product-card">
+            <img src="https://img.freepik.com/premium-photo/exquisite-perfume-bottle-night-window-light_944919-258.jpg" alt="Product 2">
+            <h2>Mukhalat Razi inspired</h2>
+            <p>Mystic, Oriental, Woody</p>
+            
+            {% include "select1.html" %}
+            <a href="javascript:void(0);" class="whatsapp-button">
+                <button>Buy Now</button>
+            </a>
+        </div>
+        
+
+        
+    </div>
+</body>
+<style>
+    /* Common styles for all screen sizes */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+    }
+
+    .product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+
+        padding: 20px;
+    }
+
+    .product-card {
+        width: calc(15.33% - 20px); /* Adjust the width based on the number of cards per row */
+        border: 1px solid #e1e1e1;
+        background-color: #fff;
+        margin: 10px;
+        text-align: center;
+        transition: transform 0.2s ease;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .product-card:hover {
+        transform: scale(1.02);
+    }
+
+    .product-card img {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        display: block;
+    }
+
+    .product-card h2 {
+        font-size: 16px;
+        margin: 10px 0;
+        color: #333;
+    }
+
+    .product-card p {
+        font-size: 14px;
+        color: #666;
+        padding: 0 10px;
+    }
+
+    .product-card span {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        display: block;
+        margin: 10px 0;
+    }
+
+    .product-card button {
+        background-color: #007BFF;
+        color: #fff;
+        border: none;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+    }
+
+    .product-card button:hover {
+        background-color: #0056b3;
+    }
+
+    /* Media query for mobile screens */
+    @media screen and (max-width: 768px) {
+        .product-card {
+            width: 100%; /* Full width on mobile screens */
+            margin: 10px 0; /* Remove horizontal margin on mobile */
+        }
+
+        .product-card p {
+            font-size: 14px;
+        }
+
+        .product-card h2 {
+            font-size: 16px;
+        }
+    }
+</style>
+
+
+<script>
+    // Function to update the price based on the selected ML and quantity
+    function updatePrice(productCard) {
+        const mlDropdown = productCard.querySelector('#ml-dropdown');
+        const selectedML = mlDropdown.options[mlDropdown.selectedIndex].value;
+        const quantityDropdown = productCard.querySelector('#quantity-dropdown');
+        const selectedQuantity = quantityDropdown.options[quantityDropdown.selectedIndex].value;
+
+        // Update the price based on the selected ML
+        let pricePerML = 0;
+        if (selectedML === '3ml') {
+            pricePerML = 120;
+        } else if (selectedML === '6ml') {
+            pricePerML = 240;
+        } else if (selectedML === '12ml') {
+            pricePerML = 480;
+        }
+
+        // Calculate the updated price based on quantity
+        let updatedPrice = pricePerML * selectedQuantity;
+
+        const productPrice = productCard.querySelector('#product-price');
+        productPrice.textContent = `Rs.${updatedPrice}`;
+
+        return updatedPrice;
+    }
+
+    // JavaScript to generate WhatsApp message content with selected quantity and ml
+    document.addEventListener('DOMContentLoaded', function () {
+        const whatsappButtons = document.querySelectorAll('.whatsapp-button');
+
+        whatsappButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productCard = button.closest('.product-card');
+                const productName = productCard.querySelector('h2').textContent;
+                const productDescription = productCard.querySelector('p').textContent;
+                const selectedML = productCard.querySelector('#ml-dropdown').options[productCard.querySelector('#ml-dropdown').selectedIndex].value;
+                const quantityDropdown = productCard.querySelector('#quantity-dropdown');
+                const selectedQuantity = quantityDropdown.options[quantityDropdown.selectedIndex].value;
+                const productPrice = updatePrice(productCard);
+
+                const whatsappMessage = `I%20want%20to%20buy%20${productName}%20(Attar Special)%20%0A%0ADescription%3A%20${productDescription}%0A%0APrice%3A%20Rs.${productPrice}%0A%0AML%3A%20${selectedML}%0A%0AQuantity%3A%20${selectedQuantity}`;
+
+                window.open(`https://wa.me/918237158485?text=${whatsappMessage}`);
+            });
+        });
+
+        const mlDropdowns = document.querySelectorAll('#ml-dropdown');
+        mlDropdowns.forEach(dropdown => {
+            dropdown.addEventListener('change', () => {
+                const productCard = dropdown.closest('.product-card');
+                updatePrice(productCard);
+            });
+        });
+
+        const quantityDropdowns = document.querySelectorAll('#quantity-dropdown');
+        quantityDropdowns.forEach(dropdown => {
+            dropdown.addEventListener('change', () => {
+                const productCard = dropdown.closest('.product-card');
+                updatePrice(productCard);
+            });
+        });
+    });
+</script>
+<script>
+    // JavaScript to filter product cards based on search input
+    document.addEventListener('DOMContentLoaded', function () {
+        const searchInput = document.querySelector('.form-control');
+        const productCards = document.querySelectorAll('.product-card');
+        
+        // Function to handle form submission
+        function handleSearchFormSubmit(event) {
+            event.preventDefault();
+            const searchText = searchInput.value.toLowerCase();
+            
+            productCards.forEach(productCard => {
+                const productName = productCard.querySelector('h2').textContent.toLowerCase();
+                const productDescription = productCard.querySelector('p').textContent.toLowerCase();
+                if (productName.includes(searchText) || productDescription.includes(searchText)) {
+                    productCard.style.display = 'block';
+                } else {
+                    productCard.style.display = 'none';
+                }
+            });
+        }
+
+        // Add a click event listener to the search button
+        const searchButton = document.querySelector('button[type="submit"]');
+        searchButton.addEventListener('click', handleSearchFormSubmit);
+    });
+</script>
+
+
+{% endblock body %}

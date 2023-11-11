@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+
+{% block title %}
+Customization
+{% endblock title %}
+
+{% block body %}
+<body style="background-color: #cfe8fc;">
+    <div class="container">
+        <div class="row justify-content-center align-items-center" style="height: 100vh;">
+            <div class="col-lg-6 col-md-8">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="card-title">Contact Us</h5>
+                        <p class="card-text">For Customization, please get in touch with us.</p>
+                        <a href="{% url 'contact' %}" class="btn btn-primary custom-button">Contact Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<style>
+    .card {
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .card-title {
+        font-size: 24px;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 18px;
+        color: #666;
+    }
+
+    .custom-button {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 5px;
+    }
+
+    .custom-button:hover {
+        background-color: #007BFF;
+        color: #fff;
+    }
+</style>
+{% endblock body %}

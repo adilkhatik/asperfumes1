@@ -1,0 +1,65 @@
+<!-- select.html -->
+<div class="product-details">
+    <div class="ml-section">
+        <label for="ml-dropdown" class="select-label">Select ML:</label>
+        <select id="ml-dropdown" class="styled-select">
+            <option value="3ml">3ml</option>
+            <option value="6ml">6ml</option>
+            <option value="12ml">12ml</option>
+        </select>
+    </div>
+    <div class="quantity-section">
+        <label for="quantity-dropdown" class="select-label">Quantity:</label>
+        <select id="quantity-dropdown" class="styled-select">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+        </select>
+    </div>
+    <span id="product-price" >Rs.200</span>
+</div>
+
+<style>
+    .product-details {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .select-label {
+        font-size: 16px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 5px;
+    }
+
+    .styled-select {
+        width: 100%;
+        padding: 12px;
+        font-size: 16px;
+        border: 2px solid #0077b6;
+        border-radius: 4px;
+        color: #333;
+    }
+
+    #product-price {
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+    }
+
+    @media screen and (max-width: 768px) {
+        .styled-select {
+            width: 100%;
+        }
+    }
+</style>
