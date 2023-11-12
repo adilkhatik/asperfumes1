@@ -57,7 +57,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid mt-4 " >
+    <div class="container-fluid mt-4 fixed-top" >
         {% if 'Attar' in request.path or 'Perfume' in request.path %}
         <div class="search-form">
             <form class="d-flex" action="" method="get">
@@ -70,7 +70,7 @@
     <style>/* Add this CSS to your stylesheet */
         /* Add this CSS to your stylesheet */
         .custom-search-form {
-            position: fixed;
+            
             top: 56px; 
            
             background-color: #ff8c00;
