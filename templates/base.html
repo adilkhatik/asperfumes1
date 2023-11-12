@@ -57,7 +57,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid mt-4" style="position: sticky; top: 0; z-index: 1000; background-color: #ffffff;">
+    <div class="container-fluid mt-4" >
         {% if 'Attar' in request.path or 'Perfume' in request.path %}
         <div class="search-form">
             <form class="d-flex" action="" method="get">
@@ -70,11 +70,16 @@
     <style>/* Add this CSS to your stylesheet */
         /* Add this CSS to your stylesheet */
         .custom-search-form {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
             background-color: #ff8c00;
             border-radius: 10px;
             padding: 15px;
             text-align: center;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
         
         .custom-search-input {
