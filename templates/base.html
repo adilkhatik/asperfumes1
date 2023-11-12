@@ -57,7 +57,7 @@
             </div>
         </div>
     </nav>
-    <div class="container-fluid mt-4 fixed-top" >
+    <div class="container-fluid mt-4 fixed-top style="padding-top: 70px;" >
         {% if 'Attar' in request.path or 'Perfume' in request.path %}
         <div class="search-form">
             <form class="d-flex" action="" method="get">
@@ -102,6 +102,12 @@
         .custom-search-button:hover {
             background-color: #0056b3;
         }
+      .navbar {
+      z-index: 1000; /* Ensure the navbar is above other elements */
+    }
+      body {
+      padding-top: 70px;
+    }
         
         </style>
     {% block body %}
