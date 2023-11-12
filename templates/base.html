@@ -57,6 +57,7 @@
             </div>
         </div>
     </nav>
+  <div style="height: 56px;"></div>
     <div class="container-fluid mt-4 fixed-top" >
         {% if 'Attar' in request.path or 'Perfume' in request.path %}
         <div class="search-form">
@@ -107,9 +108,11 @@
       
         
         </style>
-    {% block body %}
-    
-    {% endblock body %}
+    <div class="container-fluid mt-4">
+        <!-- Your content goes here -->
+        {% block body %}
+        {% endblock body %}
+    </div>
   
 
     <!-- Optional JavaScript; choose one of the two! -->
